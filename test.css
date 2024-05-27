@@ -1,0 +1,53 @@
+*{
+    background-color: beige;
+    padding: 0;
+    margin: 0;
+}
+
+.big-box{
+    background-color:aquamarine;
+    height: 100vh;
+    
+    
+}
+
+.mid-box{
+    background-color: blueviolet;
+    height: 60vh;
+    margin: 5%;
+}
+
+.sm-box{
+    background-color: cornsilk;
+    height: 40vh;
+    margin: 5%;
+}
+i{
+    display: none;
+    
+    font-size: 50px;
+    
+
+}
+#menu-icon{
+    display: none;
+}
+
+@media(min-width: 768px) and (max-width: 992px){
+
+    #menu-icon{
+        display: block;
+    }
+
+    i{
+        color: red;
+    }
+
+   
+}
+
+@media(max-width: 567px){
+    i{
+        color:darkgreen
+    }
+}

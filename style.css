@@ -8,24 +8,33 @@
 .container{
     width: 100%;
     height: 100vh;
-    padding: 10px;
+    padding: 5px;
+}
+
+header{
+    background-color: lavender;
+    height: 100vh;
+
+    
 }
 
 nav{
     display: flex;
     width: 100%;
-    height: 200px;
+    height: 20%;
     align-items: center;
     justify-content: space-evenly;
+
 }
 
 nav div img{
-    width: 150px;
+    height: 100px;
 }
 
 .nav-links ul{
     list-style: none;
     display: inline;
+    font-size: 20px;
 }
 .nav-links ul li{
     display: inline;
@@ -35,4 +44,401 @@ nav div img{
 
 .nav-links li a{
     text-decoration: none;
+}
+
+.link-icons i{
+    margin: 25px;
+}
+
+.header-sub{
+    display: flex;
+    height: 80%;
+    
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.header-sub-left h1{
+    font-size: 50px;
+    margin-bottom: 15px;
+
+}
+.header-sub-left button{
+    background-color: black;
+    color: #fff;
+    border-radius: 25px;
+    padding: 5px;
+}
+
+.header-sub-right img{
+    width: 90%;
+    margin: 0;
+
+}
+.product-container{
+    display: flex;
+    height: 400px;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+.product-container .product{
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.product button{
+    background-color: antiquewhite;
+    color: black;
+    border-radius: 25px;
+    padding: 3px;
+    margin-top: 50px;
+}
+
+.kid-info{
+    display: flex;
+    height: 480px;
+    background-color: aquamarine;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    /* align: center; */
+    margin-left: 150px;
+    padding-top: 80px;
+}
+
+.kid-left{
+    margin: 0 100px;
+
+}
+.kid-left img{
+    width: 100px;
+}
+.kid-left h1{
+    font-size: 40px;
+}
+.kid-left P{
+    margin: 20px 0;
+
+}
+.kid-left button{
+    background-color: black;
+    color: #fff;
+    border-radius: 25px;
+    padding: 5px;
+}
+
+.kid-right img{
+    width: 500px;
+    margin-right: 50px;
+}
+
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    align-items: center;
+    justify-content: space-around;
+    background-color:darkslategray;
+    color: #fff;
+    margin-top: 40px;
+}
+
+.dspn{
+    display: flex;
+     justify-content: space-around; 
+     width: 50%;
+}
+.dspn1{
+    display: flex;
+     justify-content: space-around; 
+     width: 50%;
+}
+
+.col1 ul{
+    list-style-type: none;
+    margin-top: 20px;
+    font-size: medium;
+}
+
+.col1 ul a{
+    text-decoration: none;
+    color:floralwhite;
+}
+
+.col1 ul li{
+    margin-top: 10px;
+}
+
+/* 2nd footer column Starts*/
+.col2 ul{
+    list-style-type: none;
+    margin-top: 20px;
+    font-size: medium;
+}
+
+.col2 ul a{
+    text-decoration: none;
+    color:floralwhite;
+}
+
+.col2 ul li{
+    margin-top: 10px;
+}
+ 
+/* 2nd footer column Ends*/
+
+footer label{
+    font-weight: bold;
+    font-size: large;
+}
+
+
+.new-arrival{
+    display: flex;
+    height: 500px;
+    width: 100%;
+   margin: 40px 0;
+    justify-content: space-around;
+
+    
+}
+
+.arrival-card{
+    padding-top: 50px;
+    background-color: beige;
+    
+
+}
+
+.arrival-card .arrival-image{
+    width: 200px;
+
+    
+
+    
+}
+.arrival-card .text{
+    margin-top: 70px;
+}
+
+.arrival-card > i{
+    float: right;
+    color: red;
+    margin-right: 20px;
+}
+.text .p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.text > i{
+    color: red;
+}
+
+#menu-icon{
+    /* display: hidden; */
+    display: none;
+    cursor: pointer;
+   
+    
+}
+
+@media(min-width: 768px) and (max-width: 992px){
+    #menu-icon{
+        display: block;
+        font-size: 25px;
+       
+        
+    }
+    .nav-links{
+        position: fixed;
+        top: 100px;
+        right: -100%;
+        width: 50%;
+        height: 90vh;
+        background-color:rgb(68, 70, 70);
+        border-radius: 10px;
+        transition: all 0.5s ease;
+    }
+
+    .nav-links a{
+        display: block;
+        margin: 12px 0;
+        padding: 0 25px;
+        transition: all 0.5s ease;
+        color: #fff;
+    }
+    .nav-links ul{
+        text-align: center;
+    }
+    .nav-links a:hover{
+        color:violet;
+        transform: translateY(5px);
+    }
+
+    .nav-links a.active{
+        color:cyan;
+    }
+
+    .nav-links.open{
+        right: 2%;
+    }
+
+    nav{
+        border-bottom: 1px solid forestgreen;
+        
+    }
+
+    .header-sub{
+        flex-direction: column;
+
+    }
+
+    .header-sub-right img{
+        width: 100%;
+        
+    } 
+    .header-sub h1{
+        font-size: 30px;
+    }  
+
+    .product-container{
+        flex-direction: column;
+        
+        height: auto;
+        background-color: lightgray;
+        padding: 10px;
+        border-radius: 10px;
+
+    }
+
+    .product-container .product{
+
+        width: 80%;
+        height: 300px;
+        margin-bottom: 10px;
+    }
+    .new-arrival{
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .arrival-card{
+        margin-top: 10px;
+    }
+
+    .kid-info{
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        margin: 0px;
+        padding-top: 80px;
+        border-radius: 10px;
+    }
+
+    
+
+
+}
+
+@media(max-width: 568px){
+    
+    #menu-icon{
+        display: block;
+       
+        
+    }
+    .nav-links{
+        position: fixed;
+        top: 100px;
+        right: -100%;
+        width: 50%;
+        height: 90vh;
+        background-color:rgb(68, 70, 70);
+        border-radius: 10px;
+        transition: all 0.5s ease;
+    }
+
+    .nav-links a{
+        display: block;
+        margin: 12px 0;
+        padding: 0 25px;
+        transition: all 0.5s ease;
+        color: #fff;
+    }
+    .nav-links a:hover{
+        color:violet;
+        transform: translateY(5px);
+    }
+
+    .nav-links a.active{
+        color:cyan;
+    }
+
+    .nav-links.open{
+        right: 1%;
+    }
+
+    /* nav links End */
+
+    .header-sub{
+        flex-direction: column;
+
+    }
+    .header-sub-left h1{
+        font-size: 25px;
+    }
+    .header-sub-right img{
+        width: 100%;
+       
+    }
+
+    .product-container{
+        flex-direction: column;
+        height: auto;
+        background-color: lightgray;
+        padding-top: 10px;
+        
+
+    }
+
+    .product-container .product{
+
+        width: 90%;
+        height: 300px;
+        margin: 10px 0;
+    }
+
+    .new-arrival{
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .arrival-card{
+        margin-top: 10px;
+    }
+
+    .kid-info{
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        margin: 0px;
+        padding-top: 80px;
+    }
+    .dspn1{
+        display: none;
+    }
+    .dspn{
+        width: 100%;
+    }
+
+
+
+
 }
