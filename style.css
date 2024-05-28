@@ -43,7 +43,18 @@ nav div img{
 }
 
 .nav-links li a{
-    text-decoration: none;
+    text-decoration: none; 
+    padding: 0 10px;
+    transition: all 0.5s ease;
+}
+
+.nav-links a:hover{
+    color:violet;
+    transform: translateY(5px);
+}
+
+.nav-links a.active{
+    color:rgb(15, 15, 15);
 }
 
 .link-icons i{
@@ -53,7 +64,6 @@ nav div img{
 .header-sub{
     display: flex;
     height: 80%;
-    
     align-items: center;
     justify-content: space-evenly;
 
