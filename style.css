@@ -55,6 +55,7 @@ nav div img{
 
 .nav-links a.active{
     color:rgb(15, 15, 15);
+    font-weight: bold;
 }
 
 .link-icons i{
