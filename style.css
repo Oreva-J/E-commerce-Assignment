@@ -5,16 +5,23 @@
     font-family: poppins, serif;
 }
 
+body{
+    
+   
+}
+
 .container{
     width: 100%;
-    height: 100vh;
+    height: auto;
     padding: 5px;
+    margin: 0;
+    overflow: hidden;
+    
 }
 
 header{
     background-color: lavender;
     height: 100vh;
-
     
 }
 
@@ -217,7 +224,7 @@ footer label{
     display: flex;
     height: 500px;
     width: 100%;
-   margin: 40px 0;
+    margin: 40px 0;
     justify-content: space-around;
 
     
